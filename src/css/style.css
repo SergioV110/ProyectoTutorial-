@@ -1,0 +1,13 @@
+h1,h2,h3{
+    color: rgb(255, 0, 0);
+}
+.img,.img1,.img2,.img3{
+    width: 280px;
+    height: 250px;
+}
+label{
+    color: blueviolet;
+}
+dt{
+    color: rgb(0, 64, 255);
+}
