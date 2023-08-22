@@ -1,15 +1,28 @@
 body{
+    font-family:sans-serif;
     background-color: black;
+    margin: 0;
 }
-h1,h2,h3{
+
+
+h2,h3{
     display: flex;
     justify-content: center;
     color: white;
 }
+
+.fotos__pagina{
+    text-align: center;
+    
+}
 .fotos{
+    
+    border-radius: 20px;
     width: 280px;
     height: 250px;
+  
 }
+
 .faq__pregunta{
     color: black;
     border: 2px solid white;
@@ -24,7 +37,10 @@ h1,h2,h3{
     padding: 4px;
     border-radius: 20px;
 }
+
+
 .InformaciondelosJuegos{
+    align-content: center;
     color: black;
     border:2px solid white ;
     border-color: black;
@@ -32,42 +48,91 @@ h1,h2,h3{
     padding: 6px;
     border-radius: 20px;
 }
-.Menu__Texto{
-    color: brown;
+
+
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #292828;
+    padding: 20px;
 }
-menu{
-    text-decoration: none;
-    color: #292828;
+.menu__opciones:hover
+{
+    color: black;
 }
 .menu__opciones{
     border: 2px solid #C47212;
     background:#C47212 ;
-    padding: 4px;
-    margin-right: 25px;
+    padding: 6px;
+    margin-right: 20px;
     border-radius: 20px;
     color: white;
     text-decoration: none;
+    list-style: none;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 5px;
+}
+.paginas{
+    display: flex ;  
+   
+}
+
+
+
+
+.link__descarga:hover{
+    color: black;
 }
 .link__descarga{
     border: 2px solid #C47212;
     background: #C47212;
-    padding: 4px;
+    padding: 6px;
     margin-right: 25px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
+    color: white;   
 }
-.redessociales{
-    text-decoration:none;
-    margin-right: 25px;
-    color: white;
+.linkdescarga{
+    height: 10px;
 }
-header{
-    background-color: #292828;
+.Links{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
+
+
+.redessociales{ 
+    padding: 10px;  
+}
+.redesimg{
+    height: 60px;
+    width: 60px;
+}
+
 footer{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
     background-color: #292828;
+    padding: 20px;
 }
+.redes{
+    display: flex;
+    align-items: center;
+    padding: 25px;  
+}
+
+
 
 article{
     color: white;
@@ -75,15 +140,4 @@ article{
 .Formulario{
     color: white;
 }
-.paginas{
-    display: flex;
-    justify-content: center;
-}
-.Links{
-    display: flex;
-    justify-content: center;
-}
-.redes{
-    display: flex;
-    justify-content: center;
-}
+
