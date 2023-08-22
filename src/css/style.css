@@ -1,8 +1,10 @@
+
 body{
     font-family:sans-serif;
     background-color: black;
     margin: 0;
 }
+
 
 
 h2,h3{
@@ -13,10 +15,12 @@ h2,h3{
 
 .fotos__pagina{
     text-align: center;
+    padding: 40px;
     
 }
 .fotos{
-    
+   
+    opacity: 0.6;
     border-radius: 20px;
     width: 280px;
     height: 250px;
@@ -40,12 +44,12 @@ h2,h3{
 
 
 .InformaciondelosJuegos{
-    align-content: center;
+    list-style: none;
     color: black;
     border:2px solid white ;
     border-color: black;
-    background: white;
-    padding: 6px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
     border-radius: 20px;
 }
 
@@ -61,9 +65,11 @@ header{
 .menu__opciones:hover
 {
     color: black;
+    background-color: white;
+    border: white;
 }
 .menu__opciones{
-    border: 2px solid #C47212;
+    border: 1px solid #C47212;
     background:#C47212 ;
     padding: 6px;
     margin-right: 20px;
@@ -91,9 +97,11 @@ header{
 
 .link__descarga:hover{
     color: black;
+    background-color: white;
+    border: white;
 }
 .link__descarga{
-    border: 2px solid #C47212;
+    border: 1px solid #C47212;
     background: #C47212;
     padding: 6px;
     margin-right: 25px;
@@ -103,6 +111,7 @@ header{
 }
 .linkdescarga{
     height: 10px;
+    justify-content: space-between;
 }
 .Links{
     display: flex;
@@ -137,7 +146,30 @@ footer{
 article{
     color: white;
 }
+
+
+.Informacion{
+    padding: 40px;
+}
 .Formulario{
     color: white;
+    padding: 20px;
 }
+.cuadroformulario:hover{
+    color: white;
+    background-color: #C47212;
+    
+}
+.cuadroformulario{
+    padding: 10px;
+    border-radius: 20px;
+}
+.cuadroenviar:hover{
+    color: white;
+    background-color: #292828;
 
+}
+.cuadroenviar{
+    padding: 10px;
+    border-radius: 20px;
+}
