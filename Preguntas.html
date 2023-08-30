@@ -9,18 +9,24 @@
 <body>
     <header class="menu">
         <div class="logo">
-            <img src="src/imagen/logo.png" alt="logo de la pagina">
+            <img  class="logo__imagen" src="src/imagen/logo.png" alt="logo de la pagina">
             <h2>AMESTORE</h2>
+        </div >
+
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="src/imagen/menus.png" alt=""></i>
+            </label>
+            
+                <ul class="paginas">
+                    <a class="menu__opciones" href="MIpaginaWeb.html"><li>Inicio</li></a>
+                    <a class="menu__opciones" href="Preguntas.html"><li>Preguntas</li></a>
+                    <a class="menu__opciones" href="Contactanos.html"><li>Contactanos</li></a>
+                    <a class="menu__opciones" href="InformaciondelosJuegos.html"><li>Info Juegos</li></a>
+                </ul> 
         </div>
-        <nav>
-            <ul class="paginas">
-                <a class="menu__opciones" href="MIpaginaWeb.html">Inicio</a>
-                <a class="menu__opciones" href="Preguntas.html">Preguntas</a>
-                <a class="menu__opciones" href="Contactanos.html">Contactanos</a>
-                <a class="menu__opciones" href="InformaciondelosJuegos.html">Información de los Juegos</a>
-            </ul> 
-        </nav>
-    </header> 
+    </header>
     <SECtion>
         <article style="padding: 50px;" class="faq">
           <dt class="faq__pregunta">1.¿Qué tipo de juego es left 4 dead 2?</dt>

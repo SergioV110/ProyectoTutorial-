@@ -9,37 +9,46 @@
 <body>
     <header class="menu">
         <div class="logo">
-            <img src="src/imagen/logo.png" alt="logo de la pagina">
+            <img  class="logo__imagen" src="src/imagen/logo.png" alt="logo de la pagina">
             <h2>AMESTORE</h2>
+        </div >
+
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="src/imagen/menus.png" alt=""></i>
+            </label>
+            
+                <ul class="paginas">
+                    <a class="menu__opciones" href="contactame.html"><li>Form</li></a>
+                    <a class="menu__opciones" href="Preguntas.html"><li>Preguntas</li></a>
+                    <a class="menu__opciones" href="Contactanos.html"><li>Contactanos</li></a>
+                    <a class="menu__opciones" href="InformaciondelosJuegos.html"><li>Info Juegos</li></a>
+                </ul> 
         </div>
-        <nav>
-            <ul class="paginas">
-                <a class="menu__opciones" href="Preguntas.html"><li>Preguntas</li></a>
-                <a class="menu__opciones" href="Contactanos.html"><li>Contactanos</li></a>
-                <a class="menu__opciones" href="InformaciondelosJuegos.html"><li>Información de los Juegos</li></a>
-            </ul> 
-        </nav>
     </header>
-    <section >
-        <aside class="fotos__pagina" >
-            <img class="fotos" src="src/imagen/left.jpeg"class="img1" alt="">
-            <img class="fotos" src="src/imagen/need-for-speed-most-wanted.jpg" class="img" alt=""><br>
-            <img class="fotos" src="src/imagen/GTA_San_Andreas.jpeg"class="img2" alt="">
-            <img class="fotos" src="src/imagen/warzone2.0.jpeg"class="img3" alt=""><br>
-        </aside>
+    <section class="fotoylink">
+        <section>
+            <aside class="fotos__pagina" >
+                <img class="fotos" src="src/imagen/left.jpeg"class="img1" alt="">
+                <img class="fotos" src="src/imagen/need-for-speed-most-wanted.jpg" class="img" alt=""><br>
+                <img class="fotos" src="src/imagen/GTA_San_Andreas.jpeg"class="img2" alt="">
+                <img class="fotos" src="src/imagen/warzone2.0.jpeg"class="img3" alt=""><br>
+            </aside>
+        </section>
+        <section>
+            <div class="linkdescarga">
+                <h3>Links de descargas</h3>
+            </div>
+                <nav class="Links">
+                    <a class="link__descarga" href="link del juego">Left 4 Dead 2</a><br>
+                    <a class="link__descarga" href="Link del juego">Need For Speed Most Wanted</a><br>
+                    <a class="link__descarga" href="link del juego">Gta San Andreas</a><br>
+                    <a class="link__descarga" href="link del juego">Warzone</a><br>
+                </nav>
+        </section>
     </section>
-    <section>
-        <div class="linkdescarga">
-        <h3>Links de descargas</h3>
-        </div>
-        <nav class="Links">
-            <a class="link__descarga" href="link del juego">Left 4 Dead 2</a>
-            <a class="link__descarga" href="Link del juego">Need For Speed Most Wanted</a>
-            <a class="link__descarga" href="link del juego">Gta San Andreas</a>
-            <a class="link__descarga" href="link del juego">Warzone</a>
-        </nav>
-    </section>
-    <footer>
+    <footer class="siguemeredes">
         <div class="Sigueme">
             <h2>Sigueme en mi redes sociales</h2>
         </div>        

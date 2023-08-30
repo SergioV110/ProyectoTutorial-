@@ -9,19 +9,24 @@
 <body>
   <header class="menu">
     <div class="logo">
-      <img src="src/imagen/logo.png" alt="logo de la pagina">
-      <h2>AMESTORE</h2>
-  </div>
-    <nav>
-        <ul class="paginas">
-            <a class="menu__opciones" href="MIpaginaWeb.html">Inicio</a>
-            <a class="menu__opciones" href="Preguntas.html">Preguntas</a>
-            <a class="menu__opciones" href="Contactanos.html">Contactanos</a>
-            <a class="menu__opciones" href="InformaciondelosJuegos.html">Información de los Juegos</a>
-        </ul> 
-    </nav>
-</header> 
-  <h2>Formulario</h2>
+        <img  class="logo__imagen" src="src/imagen/logo.png" alt="logo de la pagina">
+        <h2>AMESTORE</h2>
+    </div >
+
+    <div class="nav-menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="menu-icon"><img src="src/imagen/menus.png" alt=""></i>
+        </label>
+        
+            <ul class="paginas">
+                <a class="menu__opciones" href="MIpaginaWeb.html"><li>Inicio</li></a>
+                <a class="menu__opciones" href="Preguntas.html"><li>Preguntas</li></a>
+                <a class="menu__opciones" href="Contactanos.html"><li>Contactanos</li></a>
+                <a class="menu__opciones" href="InformaciondelosJuegos.html"><li>Info Juegos</li></a>
+            </ul> 
+    </div>
+</header>
   <form class="Formulario">
     <label for="name">Nombre:</label><br>
     <input class="cuadroformulario" type="text" required><br>
@@ -35,10 +40,11 @@
     <input type="color" required><br>
     <label for="dato">Nacimiento</label><br>
     <input class="cuadroformulario" type="date" required><br>
-   
     <label for="msg">Mensaje:</label><br>
     <textarea class="cuadroformulario" id="msg" name="user_message"></textarea>
-      <div><input class="cuadroenviar" type="submit" value="Enviar Mensaje"></div>
+      <div class="botoncito">
+        <input class="cuadroenviar" type="submit" value="Enviar Mensaje">
+      </div>
   </form>
   <footer>
     <div class="Sigueme">
@@ -49,8 +55,7 @@
             <a class="redessociales" href="https://instagram.com/sergio_vlss?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img class="redesimg" src="src/imagen/insta.png" alt=""></a>
             <a class="redessociales" href="https://github.com/SergioV110"><img class="redesimg" src="src/imagen/github_git_icon_145985.png" alt=""></a>
             <a class="redessociales" href="https://youtube.com/@DVRSTBEATS"><img class="redesimg" src="src/imagen/youtube.png" alt=""></a>
-
         </nav>
-</footer>https://img.freepik.com/fotos-premium/aigenerated-futuristic-car-masterpiece-in-meticulously-detailed-light_202058-6311.jpg?w=360
+</footer>
 </body>
 </html>
