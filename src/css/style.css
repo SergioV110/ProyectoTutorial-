@@ -1,8 +1,63 @@
+.menu-icon img{
+    width: 40px;
+    height: 40px;
 
+}
+.menu-icon, #check{
+    display: none;     
+}
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        position: absolute;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.25s;
+    }
+}
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     font-family:sans-serif;
     background-color: black;
-    margin: 0;
 }
 
 
@@ -19,22 +74,35 @@ h2,h3{
     
 }
 .fotos{
-   
-    opacity: 0.6;
     border-radius: 20px;
     width: 280px;
     height: 250px;
   
 }
 
+
+
 .faq__pregunta{
     color: black;
     border: 2px solid white;
     background: white;
-    padding: 4px;
-    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
-@keyframes slidein {
+.faq__respuesta{
+    /*
+    animation-duration: 3s;
+    animation-name:  slidein;
+    */
+    color: white;
+    border: 2px solid white;
+    background: #292828;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom:10px ;
+}
+/*@keyframes slidein {
     from{
         margin-left: 100% ;
         width: 300%;
@@ -43,56 +111,73 @@ h2,h3{
         margin-left: 0%;
         width: 100%;
     }   
-}
-.faq__respuesta{
-    animation-duration: 3s;
-    animation-name:  slidein;
-    
-    color: white;
-    border: 2px solid white;
-    background: #292828;
-    padding: 4px;
-    border-radius: 20px;
-}
+}*/
+/*
+@media (max-width:768px){
+    .logo{
+        width: 90%;
+        margin-left: 90%;
+        height: 100%;
+        text-align: left;
+        position: absolute;
+        background-color: var(--main-fondo);
+
+    }
+    .logo__imagen{
+        width: 90%;
+        height: 90%;
+        margin: 4%;
+    }
+    .paginas{
+        display: none;
+    }
+   
+
+}*/
+
 
 
 .InformaciondelosJuegos{
-    animation-duration: 3s;
-    animation-name:  slidein;
-    
+    /*animation-duration: 3s;
+    animation-name:  slidein;*/
     list-style: none;
     color: black;
-    border:2px solid white ;
-    border-color: black;
-    background: rgb(255, 255, 255);
+    background:white;
     padding: 20px;
     border-radius: 20px;
+    margin-bottom: 15px;
 }
-
+.Informacion{
+    padding: 40px;
+}
+.titu{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
 
 header{
     display: flex;
+    align-items: center;
     height: 65px;
     justify-content: space-between;
     background-color: #292828;
-    padding: 20px;
+    padding: 10px;
 }
 .menu__opciones:hover
 {
-    color: black;
-    background-color: white;
-    border: white;
+    color:#C47212 ;
 }
 .menu__opciones{
-    border: 1px solid #C47212;
-    background:#C47212 ;
-    padding: 6px;
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     color: white;
     text-decoration: none;
     list-style: none;
+    font-size: 20px;
     
 }
 .logo{
@@ -104,10 +189,15 @@ header{
     margin-right: 5px;
 }
 .paginas{
-    display: flex ;  
-   
+    display: flex;
+    align-items: center;
+    
 }
-
+.fotoylink{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
@@ -120,19 +210,20 @@ header{
     border: 1px solid #C47212;
     background: #C47212;
     padding: 6px;
-    margin-right: 25px;
-    border-radius: 20px;
+    margin-right: -5px;
+    border-radius: 10px;
     text-decoration: none;
     color: white;   
 }
 .linkdescarga{
     height: 10px;
-    justify-content: space-between;
+    display: contents;
+    justify-content: center;
 }
 .Links{
     display: flex;
-    justify-content: center;
-    padding: 40px;
+    padding: 30px;
+    flex-direction: column;
 }
 
 
@@ -147,9 +238,10 @@ header{
 footer{
     display: flex;
     height: 70px;
+    align-items: center;
     justify-content: space-between;
     background-color: #292828;
-    padding: 20px;
+    padding: 10px;
 }
 .redes{
     display: flex;
@@ -164,9 +256,7 @@ article{
 }
 
 
-.Informacion{
-    padding: 40px;
-}
+
 .Formulario{
     color: white;
     padding: 20px;
@@ -178,14 +268,21 @@ article{
 }
 .cuadroformulario{
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 12px;
+    display: flex;
+   
 }
 .cuadroenviar:hover{
     color: white;
-    background-color: #292828;
-
+    background-image: linear-gradient(to right,#C47212,#292828);
 }
 .cuadroenviar{
     padding: 10px;
     border-radius: 20px;
+    font-size: 20px;    
+}
+.botoncito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
